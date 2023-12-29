@@ -25,17 +25,17 @@ public class JDBCEmployeeOperations {
 
 			// a. Insert 5 records
 			insertRecords(conn, stmt, 1, "John Doe", "john@example.com", "1234567890");
-            insertRecords(conn, stmt, 2, "Jane Smith", "jane@example.com", "9876543210");
-            insertRecords(conn, stmt, 3, "Bob Johnson", "bob@example.com", "4567890123");
-            insertRecords(conn, stmt, 4, "Alice Brown", "alice@example.com", "7890123456");
-            insertRecords(conn, stmt, 5, "Charlie Wilson", "charlie@example.com", "0123456789");
+                        insertRecords(conn, stmt, 2, "Jane Smith", "jane@example.com", "9876543210");
+                        insertRecords(conn, stmt, 3, "Bob Johnson", "bob@example.com", "4567890123");
+                        insertRecords(conn, stmt, 4, "Alice Brown", "alice@example.com", "7890123456");
+                        insertRecords(conn, stmt, 5, "Charlie Wilson", "charlie@example.com", "0123456789");
 
 			// b. Modify Email_Id column to varchar(30) NOT NULL
 			modifyEmailColumn(conn);
 
 			// c. Insert 2 records and check
 			insertRecords(conn, stmt, 6, "Eva Davis", "eva@example.com", "1112223333");
-            insertRecords(conn, stmt, 7, "Frank White", "frank@example.com", "4445556666");
+                        insertRecords(conn, stmt, 7, "Frank White", "frank@example.com", "4445556666");
 
 			// d. Update the name of employee Id 3 to Karthik and phone number to 1234567890
 			updateEmployeeDetails(conn, 3, "Karthik", "1234567890");
